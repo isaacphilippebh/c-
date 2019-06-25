@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp2", "WindowsFormsApp2\WindowsFormsApp2.csproj", "{16244F58-8D9D-45D0-8A1B-881B6729BB62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraJurosCompostos", "CalculadoraJurosCompostos\CalculadoraJurosCompostos.csproj", "{9C10F7D2-B950-4D47-9AA1-DFC37D65B43F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{16244F58-8D9D-45D0-8A1B-881B6729BB62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16244F58-8D9D-45D0-8A1B-881B6729BB62}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16244F58-8D9D-45D0-8A1B-881B6729BB62}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16244F58-8D9D-45D0-8A1B-881B6729BB62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C10F7D2-B950-4D47-9AA1-DFC37D65B43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C10F7D2-B950-4D47-9AA1-DFC37D65B43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C10F7D2-B950-4D47-9AA1-DFC37D65B43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C10F7D2-B950-4D47-9AA1-DFC37D65B43F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {08BD9EDF-4219-4796-B0D8-EA3E2229F9F3}
+		SolutionGuid = {59849053-2F08-46EB-B004-9B68E1747999}
 	EndGlobalSection
 EndGlobal
