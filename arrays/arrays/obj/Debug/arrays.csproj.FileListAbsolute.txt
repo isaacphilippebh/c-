@@ -1,0 +1,10 @@
+C:\csharp\arrays\arrays\bin\Debug\arrays.exe.config
+C:\csharp\arrays\arrays\bin\Debug\arrays.exe
+C:\csharp\arrays\arrays\bin\Debug\arrays.pdb
+C:\csharp\arrays\arrays\obj\Debug\arrays.csprojAssemblyReference.cache
+C:\csharp\arrays\arrays\obj\Debug\arrays.Form1.resources
+C:\csharp\arrays\arrays\obj\Debug\arrays.Properties.Resources.resources
+C:\csharp\arrays\arrays\obj\Debug\arrays.csproj.GenerateResource.cache
+C:\csharp\arrays\arrays\obj\Debug\arrays.csproj.CoreCompileInputs.cache
+C:\csharp\arrays\arrays\obj\Debug\arrays.exe
+C:\csharp\arrays\arrays\obj\Debug\arrays.pdb
