@@ -29,26 +29,40 @@ namespace WindowsFormsApp2
 
         private void calcular_Click(object sender, EventArgs e)
         {
+            listaFinanciamento.Items.Clear();
+            errorProvider1.Clear();
             decimal inicial = decimal.Parse(recebeInicial.Text);
             decimal jurosMensal = decimal.Parse(recebeJuros.Text);
             int prazo = int.Parse(recebePrazo.Text);
             decimal mensalidade = 0;
-            //mensalidade = decimal.Parse(recebeValorPrestacao.Text);
-            listaFinanciamento.Items.Clear();
+            mensalidade = decimal.Parse(recebeValorPrestacao.Text);
 
+            
 
-            for (int c = 0; c < prazo; c++)
+            if (!string.IsNullOrWhiteSpace(inicial.ToString()))
             {
-                inicial += inicial * (jurosMensal / 100);
-                
-                listaFinanciamento.Items.Add("parcela " + (c + 1) + ":  R$" + inicial);
+               
 
-                //resultado = resultado * 100M;
-                //resultado = Math.Truncate(resultado);
-                //resultado /= 100M;
+                for (int c = 0; c < prazo; c++)
+                {
+                    inicial += inicial * (jurosMensal / 100);
 
-                resultado.Text = $"R$ + {inicial}";
+                    listaFinanciamento.Items.Add("parcela " + (c + 1) + ":  R$" + inicial);
+
+                    //resultado = resultado * 100M;
+                    //resultado = Math.Truncate(resultado);
+                    //resultado /= 100M;
+
+                    resultado.Text = $"R$ + {inicial}";
+                }
+
             }
+            else
+            {
+                errorProvider1.SetError(resultado, "ERRO");
+            }
+         
+
 
         }
 
