@@ -69,7 +69,7 @@ namespace WindowsFormsApp2
 
                     inicial = decimal.Round(inicial, 2);
 
-                    listaFinanciamento.Items.Add("parcela " + (c + 1) + ":  R$" + inicial);
+                    listaFinanciamento.Items.Add($"parcela  {(c + 1)} :  R$  {inicial}");
 
                     //resultado = resultado * 100M;
                     //resultado = Math.Truncate(resultado);
