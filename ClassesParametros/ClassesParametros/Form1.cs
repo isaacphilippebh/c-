@@ -23,7 +23,9 @@ namespace ClassesParametros
             int valor = 10;
             obj.Subtracao(ref valor);
             label1.Text = valor.ToString();
-            
+            obj.Nome = "Isaac Philippe";
+            obj.Apresentar();
+
         }
     }
 }

@@ -31,21 +31,43 @@ namespace WindowsFormsApp2
         {
             listaFinanciamento.Items.Clear();
             errorProvider1.Clear();
-            decimal inicial = decimal.Parse(recebeInicial.Text);
-            decimal jurosMensal = decimal.Parse(recebeJuros.Text);
-            int prazo = int.Parse(recebePrazo.Text);
-            decimal mensalidade = 0;
-            mensalidade = decimal.Parse(recebeValorPrestacao.Text);
 
-            
+            //decimal inicial = decimal.Parse(recebeInicial.Text);
+            //decimal jurosMensal = decimal.Parse(recebeJuros.Text);
+            //int prazo = int.Parse(recebePrazo.Text);
+            //decimal mensalidade = 0;
+            //mensalidade = decimal.Parse(recebeValorPrestacao.Text);
 
-            if (!string.IsNullOrWhiteSpace(inicial.ToString()))
+            var erro = "";
+
+            if (decimal.TryParse(recebeInicial.Text, out decimal inicial) == false)
             {
-               
+                errorProvider1.SetError(recebeInicial, "Erro");
+                erro = "erro";
+            }
+            if (decimal.TryParse(recebeJuros.Text, out decimal jurosMensal) == false)
+            {
+                errorProvider1.SetError(recebeJuros, "Erro");
+                erro = "erro";
+            }
+            if (decimal.TryParse(recebePrazo.Text, out decimal prazo)== false)
+            {
+                errorProvider1.SetError(recebePrazo, "Erro");
+                erro = "erro";
+            }
+            if (decimal.TryParse(recebeValorPrestacao.Text, out decimal mensalidade) == false)
+            {
+                errorProvider1.SetError(recebeValorPrestacao, "Erro");
+                erro = "erro";
+            }
 
+            if (erro != "erro")
+            {
                 for (int c = 0; c < prazo; c++)
                 {
                     inicial += inicial * (jurosMensal / 100);
+
+                    inicial = decimal.Round(inicial, 2);
 
                     listaFinanciamento.Items.Add("parcela " + (c + 1) + ":  R$" + inicial);
 
@@ -57,13 +79,6 @@ namespace WindowsFormsApp2
                 }
 
             }
-            else
-            {
-                errorProvider1.SetError(resultado, "ERRO");
-            }
-         
-
-
         }
 
         private void Limpar_Click(object sender, EventArgs e)
@@ -82,6 +97,7 @@ namespace WindowsFormsApp2
         private void Form1_Load(object sender, EventArgs e)
         {
 
+           
         }
     }
 }
