@@ -16,5 +16,11 @@ namespace Enumeradores
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DiasDaSemana dd = new DiasDaSemana();
+            dd.ApresentarDia(DiasDaSemana.Dia.Domingo);
+        }
     }
 }
